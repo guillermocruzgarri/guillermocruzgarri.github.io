@@ -1,3 +1,4 @@
+
 'use client'
 
 import { useState, useEffect } from 'react'
@@ -27,14 +28,19 @@ const Header = () => {
         isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm' : 'bg-transparent'
       }`}
     >
-     
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          <div className="font-bold text-xl text-blue-600">
+            Guillermo Cruz
+          </div>
+
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {['Home', 'About', 'Skills', 'Experience', 'Portfolio', 'Blog', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-white hover:text-blue-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
               >
                 {item}
               </button>
