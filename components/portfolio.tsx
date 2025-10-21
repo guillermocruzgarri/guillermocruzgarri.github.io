@@ -31,11 +31,13 @@ const Portfolio = () => {
   }
 
   const getProjectImage = (index: number) => {
+    // Custom AI-generated photorealistic images showing professionals at work
     const images = [
-      'https://static.vecteezy.com/system/resources/previews/012/076/073/non_2x/female-operations-manager-holds-meeting-presentation-for-a-team-of-economists-asian-woman-uses-digital-whiteboard-with-growth-analysis-charts-statistics-and-data-people-work-in-business-office-photo.jpg',
-      'https://static.vecteezy.com/system/resources/previews/070/629/395/non_2x/financial-analyst-reviewing-data-charts-and-graphs-on-laptop-for-business-strategy-in-office-photo.jpeg',
-      'https://cdn.autonomous.ai/production/ecm/240425/Dual-Monitor-Setup-Ideas-Boost-Productivity-Efficiency1.webp',
-      'https://marketplace.canva.com/EAE9xrxOUfk/2/0/1600w/canva-modern-promotion-business-agency-blog-banner-XxOFEMvyEC8.jpg'
+      'https://cdn.abacus.ai/images/8a24fc3e-fc79-4786-b98b-b6798801a2ba.png', // Supplier Payment Automation - Professional with laptop
+      'https://cdn.abacus.ai/images/69170f0b-9c61-4afc-a45b-912ff0a18ace.png', // SAP B1 Implementation - Team in conference room
+      'https://cdn.abacus.ai/images/c90596e8-f727-4777-a40f-e73bd808db90.png', // Hybrid Financial System - Multi-monitor workstation
+      'https://cdn.abacus.ai/images/09b3df44-30fe-4012-858a-02cf830a28b9.png', // Month-End Closing - Finance professional at desk
+      'https://cdn.abacus.ai/images/5619afd7-2ba6-4a78-abfb-cdd88bd94738.png'  // Operational Forecasting - Analyst presenting to team
     ]
     return images[index % images.length]
   }
