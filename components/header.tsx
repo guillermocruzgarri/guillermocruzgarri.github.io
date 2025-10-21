@@ -40,7 +40,7 @@ const Header = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-blue-600 transition-colors font-medium`}
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
               >
                 {item}
               </button>
@@ -71,7 +71,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className={`md:hidden ${isScrolled ? 'text-gray-700' : 'text-white'}`}
+            className="md:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
