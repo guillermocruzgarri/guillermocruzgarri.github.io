@@ -58,7 +58,7 @@ const Header = () => {
               onClick={() => window.open('/FDA-CV-Guillermo-Cruz.pdf', '_blank')}
               className="flex items-center space-x-2"
             >
-              <FileText size={16} />
+              <Download size={16} />
               <span>FDA CV</span>
             </Button>
           </div>
@@ -101,7 +101,7 @@ const Header = () => {
                   onClick={() => window.open('/FDA-CV-Guillermo-Cruz.pdf', '_blank')}
                   className="flex items-center space-x-2 flex-1"
                 >
-                  <FileText size={16} />
+                  <Download size={16} />
                   <span>FDA CV</span>
                 </Button>
               </div>
