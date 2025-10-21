@@ -35,17 +35,17 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
-              {['Home', 'About', 'Skills', 'Experience', 'Portfolio', 'Blog', 'Contact'].map((item) => (
+          <nav className="hidden md:flex space-x-8">
+            {['Home', 'About', 'Skills', 'Experience', 'Portfolio', 'Blog', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className={`${isScrolled ? 'text-gray-700' : 'text-white'} hover:text-blue-600 transition-colors font-medium`}
-            >
-            {item}
-            </button>
+                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+              >
+                {item}
+              </button>
             ))}
-            </nav>
+          </nav>
 
           {/* CV Download Buttons */}
           <div className="hidden md:flex space-x-2">
@@ -71,7 +71,7 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <button
-            className={`md:hidden ${isScrolled ? 'text-gray-700' : 'text-white'}`}
+            className="md:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
