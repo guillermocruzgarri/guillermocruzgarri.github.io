@@ -1,0 +1,62 @@
+
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+    binaryTargets = ["native", "linux-musl-arm64-openssl-3.0.x"]
+    output = "/home/ubuntu/guillermo_cruz_portfolio/nextjs_space/node_modules/.prisma/client"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model BlogPost {
+  id          String    @id @default(cuid())
+  title       String
+  slug        String    @unique
+  excerpt     String
+  content     String
+  category    String    // BA or FDA
+  tags        String[]
+  imageUrl    String?
+  published   Boolean   @default(false)
+  featured    Boolean   @default(false)
+  readTime    Int       @default(5)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@map("blog_posts")
+}
+
+model Project {
+  id          String    @id @default(cuid())
+  title       String
+  description String
+  longDescription String?
+  imageUrl    String?
+  technologies String[]
+  category    String    // BA or FDA
+  featured    Boolean   @default(false)
+  demoUrl     String?
+  githubUrl   String?
+  order       Int       @default(0)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@map("projects")
+}
+
+model Contact {
+  id        String    @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String
+  status    String    @default("new")
+  createdAt DateTime  @default(now())
+
+  @@map("contacts")
+}
