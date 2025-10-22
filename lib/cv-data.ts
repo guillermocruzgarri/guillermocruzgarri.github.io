@@ -27,13 +27,13 @@ export const guillermoData = {
       "Financial Modeling & Forecasting",
       "Budget Planning & Analysis",
       "P&L Analysis",
-      "KPI Development",
+      "Financial Ratios Analysis",
       "Statistical Analysis",
       "Data Pipeline Integration",
       "Variance Analysis",
-      "Financial Reporting",
+      "Financial Statements Reporting",
       "Cost-Benefit Analysis",
-      "Multi-million Dollar Budget Management"
+      "Multi-million Euro Budget Management"
     ],
     technical: [
       "Excel Advanced & Macros Programming",
@@ -57,6 +57,8 @@ export const guillermoData = {
       "Team Development",
       "Stakeholder Management",
       "Problem Solving",
+      "Task Prioritization",
+      "Thrives in Fast-Paced Environments",
       "Leadership"
     ]
   },
