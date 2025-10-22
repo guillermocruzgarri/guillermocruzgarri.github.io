@@ -48,7 +48,7 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            About <span className="text-blue-600">Guillermo Eduardo Cruz Garri</span>
+            About <span className="text-blue-600">Me</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto rounded-full" />
         </motion.div>
