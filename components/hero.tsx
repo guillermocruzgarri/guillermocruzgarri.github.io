@@ -98,7 +98,7 @@ const Hero = () => {
                   size="lg"
                   variant="outline"
                   onClick={() => window.open('/FDA-CV-Guillermo-Cruz.pdf', '_blank')}
-                  className="border-white text-white hover:bg-blue-600 hover:text-gray-900 px-8 py-3 text-lg"
+                  className="border-white text-blue-600 hover:bg-white hover:text-gray-900 px-8 py-3 text-lg"
                 >
                   <TrendingUp size={20} className="mr-2" />
                   Financial Analyst CV  
